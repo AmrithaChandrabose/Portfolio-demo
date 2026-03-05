@@ -1,0 +1,241 @@
+* {
+    font-family: "Playfair Display", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* navbar */
+.navbar {
+    background-color: #000000;
+    padding: 15px 60px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+.main {
+    background-image: url(' https://images.mid-day.com/images/images/2026/jan/Sindhu-aa-1768007413468_d.png');
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-size: cover;
+}
+
+.main h2 {
+    color: rgb(196, 211, 223);
+    align-items: flex-start;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+/* section */
+section {
+    background: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    max-width: 100%;
+    padding: 25px;
+    background: #9edfdc;
+}
+
+
+.intro p {
+    font-size: 20px;
+    text-align: justify;
+    color: #040503;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+
+
+/* achievements */
+section ul {
+    display: flex;
+    flex-direction: column;   
+    gap: 10px;               
+    list-style: none;    
+}
+section ul li {
+    background-color: #c4ea9e;
+    padding: 10px;
+    text-align: center;
+    border-radius: 13px;
+    transition: transform 0.3s;
+    font-size: 18px;
+}
+
+li:hover {
+    transform: scale(1.0);
+    background-color: rgb(147, 208, 206);
+}
+
+section h2 {
+    text-align: center;
+}
+
+/* gallery */
+#gallery {
+    text-align: center;
+}
+
+.photos {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.photos img {
+    /* width: 100%;
+    height:160px;
+    transition: transform 0.3s; */
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.06);
+}
+
+
+/* awards */
+#awards {
+    text-align: center;
+    background-color: rgb(180, 220, 206);
+}
+
+.rows {
+    display: flex;
+    margin-top: 0%;
+    gap: 20px;
+
+}
+
+.cols {
+    width: 500px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.cols h3 {
+    text-align: center;
+}
+
+.cols:hover {
+    transform: scale(1.05);
+    background-color: rgb(229, 240, 194);
+}
+
+.cols img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cols h3 {
+    margin: 10px 0;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 660px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .main {
+        height: 300px;
+    }
+
+    .main h2 {
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    .rows {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .intro p{
+        font-size: 15px;
+    }
+   .cols p{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .photos img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .photos img {
+        width: 100%;
+    }
+}
